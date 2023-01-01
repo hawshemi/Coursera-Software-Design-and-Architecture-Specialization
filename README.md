@@ -10,3 +10,6 @@ https://www.coursera.org/specializations/software-design-architecture
 
 
 2. Desing Patterns: https://www.coursera.org/learn/design-patterns
+
+    Certificate: ...
+    
