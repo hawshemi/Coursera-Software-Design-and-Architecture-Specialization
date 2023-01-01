@@ -1,5 +1,7 @@
-/* Written by https://hawshemi.com */
-	
+
+// By https://hawshemi.com on 29-Dec-2022
+
+
 package com.example.sharingapp;
 
 import android.content.Context;
