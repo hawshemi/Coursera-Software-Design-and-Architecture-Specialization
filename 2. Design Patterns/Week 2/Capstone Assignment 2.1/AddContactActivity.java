@@ -6,9 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
-/**
- * Add a new contact
- */
+// By https://hawshemi.com on 01-Jan-2023
+
+// Add a new contact
 public class AddContactActivity extends AppCompatActivity {
 
     private ContactList contact_list = new ContactList();
