@@ -4,20 +4,21 @@ import android.content.Context;
 
 // By https://hawshemi.com on 01-Jan-2023
 
-public class DeleteContactCommand implements Command {
-    private ContactList contactList;
+// Command to delete a contact
+public class DeleteContactCommand extends Command {
+
+    private ContactList contact_list;
     private Contact contact;
     private Context context;
 
-    public DeleteContactCommand(ContactList contactList, Contact contact, Context context) {
-        this.contactList = contactList;
+    public DeleteContactCommand(ContactList contact_list, Contact contact, Context context) {
+        this.contact_list = contact_list;
         this.contact = contact;
         this.context = context;
     }
 
-    @Override
     public void execute() {
-        contactList.deleteContact(contact);
-        setIsExecuted(contactList.saveContacts(context));
+        contact_list.deleteContact(contact);
+        setIsExecuted(contact_list.saveContacts(context));
     }
 }
