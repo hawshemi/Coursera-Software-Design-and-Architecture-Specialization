@@ -2,16 +2,17 @@ package com.example.sharingapp;
 
 import android.content.Context;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
-/**
- * Editing a pre-existing contact consists of deleting the old contact and adding a new contact with the old
- * contact's id.
- * Note: You will not be able contacts which are "active" borrowers
- */
+// By https://hawshemi.com on 01-Jan-2023
+
+// Editing a pre-existing contact consists of deleting the old contact and adding a new contact with the old
+// contact's id.
+// Note: You will not be able contacts which are "active" borrowers
+
 public class EditContactActivity extends AppCompatActivity {
 
     private ContactList contact_list = new ContactList();
@@ -57,6 +58,7 @@ public class EditContactActivity extends AppCompatActivity {
         String username_str = username.getText().toString();
         String id = contact.getId(); // Reuse the contact id
 
+
         // Check that username is unique AND username is changed (Note: if username was not changed
         // then this should be fine, because it was already unique.)
         if (!contact_list.isUsernameAvailable(username_str) && !(contact.getUsername().equals(username_str))) {
@@ -66,10 +68,14 @@ public class EditContactActivity extends AppCompatActivity {
 
         Contact updated_contact = new Contact(username_str, email_str, id);
 
-        Command command = new EditContactCommand(contact_list, contact, updated_contact, context);
-        command.execute();
+        // Edit contact
+        EditContactCommand edit_contact_command = new EditContactCommand(contact_list, contact, updated_contact, context);
+        edit_contact_command.execute();
 
-        if(!command.isExecuted()) return;
+        boolean success = edit_contact_command.isExecuted();
+        if (!success){
+            return;
+        }
 
         // End EditContactActivity
         finish();
@@ -77,11 +83,14 @@ public class EditContactActivity extends AppCompatActivity {
 
     public void deleteContact(View view) {
 
-        Command command = new DeleteContactCommand(contact_list, contact, context);
-        command.execute();
+        // Delete contact
+        DeleteContactCommand delete_contact_command = new DeleteContactCommand(contact_list, contact, context);
+        delete_contact_command.execute();
 
-        if(!command.isExecuted()) return;
-
+        boolean success = delete_contact_command.isExecuted();
+        if (!success){
+            return;
+        }
         // End EditContactActivity
         finish();
     }
