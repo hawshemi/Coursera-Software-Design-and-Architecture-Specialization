@@ -14,3 +14,7 @@ https://www.coursera.org/specializations/software-design-architecture
 
     Certificate: ...
     
+3. Software Architecture: https://www.coursera.org/learn/software-architecture
+
+    Certificate: ...
+    
