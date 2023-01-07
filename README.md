@@ -18,3 +18,6 @@ https://www.coursera.org/specializations/software-design-architecture
 
     Certificate: ...
     
+4. Service-Oriented Architecture: https://www.coursera.org/learn/service-oriented-architecture
+
+    Certificate: ...
