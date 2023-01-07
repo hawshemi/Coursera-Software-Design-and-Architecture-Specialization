@@ -12,7 +12,7 @@ https://www.coursera.org/specializations/software-design-architecture
 
 2. Desing Patterns: https://www.coursera.org/learn/design-patterns
 
-    Certificate: ...
+    Certificate: https://coursera.org/share/20536274335183da261c9fdc8a3b42f6
     
 3. Software Architecture: https://www.coursera.org/learn/software-architecture
 
