@@ -7,17 +7,16 @@ https://www.coursera.org/specializations/software-design-architecture
 
 1. Object-Oriented Design: https://www.coursera.org/learn/object-oriented-design
 
-    Certificate: https://coursera.org/share/e55478615e2bfa833da08dc80fb3413d
-
+    Certificate: https://www.coursera.org/account/accomplishments/verify/9HJ63JCPTJ36
 
 2. Desing Patterns: https://www.coursera.org/learn/design-patterns
 
-    Certificate: https://coursera.org/share/20536274335183da261c9fdc8a3b42f6
+    Certificate: https://www.coursera.org/account/accomplishments/verify/X6ZBY7WFNKRR
     
 3. Software Architecture: https://www.coursera.org/learn/software-architecture
 
-    Certificate: https://coursera.org/share/b06d6c1d84840308531855a1fa931166
+    Certificate: https://www.coursera.org/account/accomplishments/verify/ZZP7YW28EPGQ
     
 4. Service-Oriented Architecture: https://www.coursera.org/learn/service-oriented-architecture
 
-    Certificate: ...
+    Certificate: https://www.coursera.org/account/accomplishments/verify/GYR99ZHTDZZ7
